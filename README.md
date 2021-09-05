@@ -12,7 +12,8 @@ SUPERSMARTBOT😎
 
 <div align="center">
  
-![IMG-20210731-WA0000](https://user-images.githubusercontent.com/53081109/127731525-b2eb1adc-7647-4c7b-a4a1-11795964eca6.jpg)
+![IMG-20210904-WA0003](https://user-images.githubusercontent.com/90084057/132124753-df240c6e-71d8-47e6-9621-26cede9ac448.jpg)
+
 
 ## 📢 Guide
 Click WA logo to Join Support Group 👇
