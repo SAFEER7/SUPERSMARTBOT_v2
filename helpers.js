@@ -17,13 +17,13 @@
 */
 
 function successfullMessage(msg) {
-    return "✅ *Super Smart*:  ```" + msg + "```"
+    return "✅ *Supersmart*:  ```" + msg + "```"
 }
 function errorMessage(msg) {
-    return "🛑 *Super Smart*:  ```" + msg + "```"
+    return "🛑 *Supersmart*:  ```" + msg + "```"
 }
 function infoMessage(msg) {
-    return "⏺️ *Super Smart*:  ```" + msg + "```"
+    return "⏺️ *Supersmart*:  ```" + msg + "```"
 }
 
 
