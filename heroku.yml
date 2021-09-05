@@ -1,5 +1,5 @@
 build:
   docker:
-      worker: /supersmart/Dockerfile
+      worker: /persmart/Dockerfile
 run:
    worker: npm start
