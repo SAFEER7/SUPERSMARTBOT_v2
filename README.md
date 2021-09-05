@@ -58,7 +58,7 @@ By establishing the Asena, you are deemed to have accepted these responsibilitie
   <div align="center">
     
   SAFEER![IMG-20210731-WA0000](https://user-images.githubusercontent.com/53081109/127731525-b2eb1adc-7647-4c7b-a4a1-11795964eca6.jpg)
- https://github.com/SAFEER7/SUPERSMARTBOT_v2 |  
-----|
+| https://github.com/SAFEER7/SUPERSMARTBOT_v2 |  
+
 [SuperSmartBot](https://github.com/SAFEER7/SUPERSMARTBOT_v2)  |
 Base, Bug Fixes, Modules | 
