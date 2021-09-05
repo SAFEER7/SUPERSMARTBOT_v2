@@ -234,7 +234,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
 
         console.log(
 
-            chalk.green.bold('💗Supersmart working ✅️')
+            chalk.green.bold('✅️ SuperSmart working!')
 
         );
 
