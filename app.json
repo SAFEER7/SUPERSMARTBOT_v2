@@ -1,12 +1,12 @@
 {
     "name": "SUPERSMARTBOT_v2",
-    "description": "SUPERSMARTBOT_v2 is the Modified Version of WhatsAsena, Made By @farhan-dqz with Baileys.",
+    "description": "WhatsAsena project - Makes it easy and fun to use Whatsapp. World's first UserBot made for Whatsapp.",
     "logo": "![Supersmart](https://user-images.githubusercontent.com/90084057/132096192-24f2b488-55ff-4e7a-ad1e-7512000e0438.png)",
 ,
-    "keywords": ["whatsapp", "userbot", "super", "WhatsAsena", "smart", "bot", "ai"],
+    "keywords": ["whatsapp", "userbot", "Asena", "WhatsAsena", "api", "bot", "ai"],
     "repository": "https://github.com/SAFEER7/SUPERSMARTBOT_v2",
-    "website":   "https://github.com/SAFEER7/SUPERSMARTBOT_v2",
-    "success_url": "https://github.com/SAFEER7/SUPERSMARTBOT_v2",
+    "website":   "maintainence",
+    "success_url": "maintainence",
     "stack": "container",
     "env": {
         "SUPERSMART_SESSION": {
