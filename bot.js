@@ -22,7 +22,7 @@ const config = require('./config');
 
 const {WAConnection, MessageOptions, MessageType, Mimetype, Presence} = require('@adiwajshing/baileys');
 
-const {Message, StringSession, Image, Video} = require('./supersmart/');
+const {Message, StringSession, Image, Video} = require('./Safeer/');
 
 const { DataTypes } = require('sequelize');
 
