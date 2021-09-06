@@ -122,7 +122,7 @@ Asena.addCommand({on: 'text', fromMe: false}, (async (message, match) => {
     if (!!message.mention && message.mention[0] == '918606369165@s.whatsapp.net') {
 await message.client.sendMessage(message.jid, fs.readFileSync('./Supersmart/mention.webp'), MessageType.sticker, { mimetype: Mimetype.webp, quoted : message.data, ptt: false})
     }
-const array = ['chaya','escape','grp','truth','nice','let','get','img','Hello','list','hm','Fuck','pottan','update','menu','oh','alive','sad','yt','photo','nokk','nude','oo','myr','kali','Remove','run','bot','Erorr','lost','podey','copy','Da','hi','come','sex','sed','help','sorry','not','podi','nee','done','oru','kalam','ser','Di','Dey']
+const array = ['Supersmart','chaya','escape','grp','truth','nice','let','get','img','Hello','list','hm','Fuck','pottan','update','menu','oh','alive','sad','yt','photo','nokk','nude','oo','myr','kali','Remove','run','bot','Erorr','lost','podey','copy','Da','hi','come','sex','sed','help','sorry','not','podi','nee','done','oru','kalam','ser','Di','Dey']
 array.map( async (a) => {
 let pattern = new RegExp(`\\b${a}\\b`, 'g');
 if(pattern.test(message.message)){
