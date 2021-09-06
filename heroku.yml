@@ -1,5 +1,5 @@
 build:
   docker:
-      worker: /Safeer/Dockerfile
+      worker: /safeer/Dockerfile
 run:
    worker: npm start
