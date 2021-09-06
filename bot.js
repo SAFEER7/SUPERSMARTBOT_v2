@@ -10,7 +10,7 @@ const events = require("./events");
 const chalk = require('chalk');
 const config = require('./config');
 const {WAConnection, MessageOptions, MessageType, Mimetype, Presence} = require('@adiwajshing/baileys');
-const {Message, StringSession, Image, Video} = require('./Safeer/');
+const {Message, StringSession, Image, Video} = require('./safeer/');
 const { DataTypes } = require('sequelize');
 const { getMessage } = require("./plugins/sql/greetings");
 const axios = require('axios');
@@ -133,7 +133,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
         });
 
         console.log(
-            chalk.green.bold('✅ Amalser working!')
+            chalk.green.bold('✅ Supersmart working!')
         );
     });
     
@@ -258,8 +258,8 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
                                     'Gerçekleşen Hata: ' + error + '\n\n'
                                     , MessageType.text);
                             } else {
-                                await conn.sendMessage(conn.user.jid, '*~_________~ Amalser ~______~*' +
-                                    '\n*🌀 Subcribe this channel other wise chance to get erorr: https://youtu.be/RlSG4ZgPls0*' +
+                                await conn.sendMessage(conn.user.jid, '*~_________~ Supersmart ~______~*' +
+                                    
                                     '\n\n*⚠️ ' + error + '*\n'
                                     , MessageType.text);
                             }
