@@ -4,6 +4,7 @@ RUN git clone https://github.com/SAFEER7/SUPERSMARTBOT_v2 /root/WhatsAsenaDuplic
 WORKDIR /root/WhatsAsenaDuplicated/
 ENV TZ=Europe/Istanbul
 RUN npm install supervisor -g
+RUN yarn install --no-audit
 RUN git clone https://github.com/SAFEER7/Media 
 
 
