@@ -11,7 +11,7 @@ Asena.addCommand({pattern: 'git', fromMe: false, desc: Lang.WP}, (async (message
     
     
    
-  r_text[0] = "![https://i.ibb.co/wy7nDg4/IMG-20210904-111230.jpg)
+  r_text[0] = "https://imgur.com/a/cneMZPJ";
 
 ";
     
