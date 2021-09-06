@@ -133,7 +133,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
         });
 
         console.log(
-            chalk.green.bold('✅ SuperSmart working!')
+            chalk.green.bold('✅ Supersmart working!')
         );
     });
     
@@ -258,7 +258,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
                                     'Gerçekleşen Hata: ' + error + '\n\n'
                                     , MessageType.text);
                             } else {
-                                await conn.sendMessage(conn.user.jid, '*~_________~ SuperSmart ~______~*' +
+                                await conn.sendMessage(conn.user.jid, '*~_________~ Supersmart ~______~*' +
                                     '\n\n*📩 ' + error + '*\n'
                                     , MessageType.text);
                             }
