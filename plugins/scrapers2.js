@@ -131,7 +131,7 @@ if (config.WORKTYPE == 'private') {
 
     Asena.addCommand({pattern: 'owner', fromMe: true, desc: 'shows the detail of bot owner'}, (async (message, match) => {
 
-        if (message.jid === '15369524516-1612300121@g.us') {
+        if (message.jid === '54218542512-1612300121@g.us') {
 
             return;
         }
@@ -276,7 +276,7 @@ else if (config.WORKTYPE == 'public') {
 
     Asena.addCommand({pattern: 'owner', fromMe: false, desc: 'shows the detail of bot owner'}, (async (message, match) => {
 
-        if (message.jid === '15369524516-1612300121@g.us') {
+        if (message.jid === '54218542512-1612300121@g.us') {
 
             return;
         }
