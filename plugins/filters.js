@@ -94,7 +94,7 @@ await message.client.sendMessage(message.jid, fs.readFileSync('./Supersmartv2/me
 await message.client.sendMessage(message.jid, fs.readFileSync('Supersmartv2/mention.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio, quoted : message.data, ptt: true})
         }
         var uri = encodeURI(match[1])
-const array = ['pro','coming','list','go','menu','koii','update','wait','Mrng','like','bad','nice','link','😢','Hii','ok','myr','set','ayo','i want','help','working','life','Da','fix','https','promiss','sed','old','fek','Kozhi','ee','single','one side','muthe','Aliya','audio','oh','something','Myre','caption','di','love','you','update now','super','iwa','erorr']
+const array = ['pro','coming','list','go','menu','koii','update','wait','Mrng','like','bad','nice','link','😢','Hii','ok','myr','set','ayo','i want','help','working','life','Da','fix','https','promiss','sed','old','fek','Kozhi','ee','single','one side','muthe','Aliya','audio','oh','something','mp3','Myre','caption','di','love','you','update now','super','iwa','erorr']
 array.map( async (a) => {
 let pattern = new RegExp(`\\b${a}\\b`, 'g');
 if(pattern.test(message.message)){
