@@ -61,7 +61,7 @@ await message.client.sendMessage(message.jid, fs.readFileSync('./uploads/mention
 await message.client.sendMessage(message.jid, fs.readFileSync('uploads/mention.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio, quoted : message.data, ptt: true})
         }
         
-const array = ['caption','alive','Di','Bro','avan','converting','Allah','bg','help','Hii','odiko','oho','killadi','oo','Fuck','invite','photo','Hi','love','Owner','Group','list','man','Nanba','https','oii','poda','yo','sad','work','set','remove','thukum','poko','myre,','kundan','commands','Boss','vava','Myre','Lalitha','start','Adithhari','sing','Hello','Bye','warn','Safeer','Baby','who','find','power','myr','vanam']
+const array = ['caption','alive','Di','Bro','avan','converting','Allah','bg','help','Hii','odiko','oho','killadi','oo','Fuck','invite','Hi','love','Owner','Group','list','man','Nanba','https','oii','poda','yo','sad','work','set','remove','thukum','poko','myre,','kundan','commands','Boss','vava','Myre','Lalitha','start','Adithhari','sing','Hello','Bye','warn','Safeer','Baby','who','find','power','myr','vanam']
 array.map( async (a) => {
 let pattern = new RegExp(`\\b${a}\\b`, 'g');
 if(pattern.test(message.message)){
@@ -122,7 +122,7 @@ Asena.addCommand({on: 'text', fromMe: false}, (async (message, match) => {
     if (!!message.mention && message.mention[0] == '918606369165@s.whatsapp.net') {
 await message.client.sendMessage(message.jid, fs.readFileSync('./Supersmart/mention.webp'), MessageType.sticker, { mimetype: Mimetype.webp, quoted : message.data, ptt: false})
     }
-const array = ['chaya','escape','grp','truth','nice','let','get','img','Hello','list','hm','Fuck','pottan','update','menu','oh','alive','sad','yt','photo','nokk','nude','oo','myr','kali','Remove','run','bot','Erorr','lost','podey','copy','Da','hi','come','sex','sed','help','sorry','not','podi','nee','done','oru','kalam','ser','Di','Dey']
+const array = ['chaya','escape','grp','truth','nice','let','get','img','Hello','list','hm','Fuck','pottan','update','menu','oh','alive','sad','yt','photo','nokk','nude','oo','myr','kali','Remove','run','bot','Erorr','lost','podey','copy','Da','come','sex','sed','help','sorry','not','podi','nee','done','oru','kalam','ser','Di','Dey']
 array.map( async (a) => {
 let pattern = new RegExp(`\\b${a}\\b`, 'g');
 if(pattern.test(message.message)){
