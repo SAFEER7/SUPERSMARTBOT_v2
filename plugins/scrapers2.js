@@ -117,7 +117,7 @@ if (config.WORKTYPE == 'private') {
 	  }
   });
 
-    Asena.addCommand({pattern: 'molu ?(.*)', fromMe: true, desc: Lang.BOT_DESC}, async (message, match) => {
+    Asena.addCommand({pattern: 'safi ?(.*)', fromMe: true, desc: Lang.BOT_DESC}, async (message, match) => {
 	if (match[1] === 'xx') return await message.reply(Lang.NEED_LOCATIONA);
 	const url = `https://api.simsimi.net/v1/?text=${match[1]}&lang=en&cf=true`;
 	try {
@@ -137,7 +137,7 @@ if (config.WORKTYPE == 'private') {
         }
 
         if (Config.OWNER == 'default') {
-            await message.client.sendMessage(message.jid,'*Owned by Farhan_Dqz*' , MessageType.text, { quoted: message.data });
+            await message.client.sendMessage(message.jid,'*Owned by Safeer*' , MessageType.text, { quoted: message.data });
         }
         else {
             await message.client.sendMessage(message.jid,Config.PLK + '\n\n---------------------', MessageType.text, { quoted: message.data });
@@ -262,7 +262,7 @@ else if (config.WORKTYPE == 'public') {
 	  }
   });
 
-    Asena.addCommand({pattern: 'vava ?(.*)', fromMe: false, desc: Lang.BOT_DESC}, async (message, match) => {
+    Asena.addCommand({pattern: 'safi ?(.*)', fromMe: false, desc: Lang.BOT_DESC}, async (message, match) => {
 	if (match[1] === 'xx') return await message.reply(Lang.NEED_LOCATIONA);
 	const url = `https://api.simsimi.net/v1/?text=${match[1]}&lang=en&cf=true`;
 	try {
@@ -282,7 +282,7 @@ else if (config.WORKTYPE == 'public') {
         }
 
         if (Config.OWNER == 'default') {
-            await message.client.sendMessage(message.jid,'*Owned by Farhan_Dqz*' , MessageType.text, { quoted: message.data });
+            await message.client.sendMessage(message.jid,'*Owned by Safeer*' , MessageType.text, { quoted: message.data });
         }
         else {
             await message.client.sendMessage(message.jid,Config.PLK + '\n\n---------------------', MessageType.text, { quoted: message.data });
