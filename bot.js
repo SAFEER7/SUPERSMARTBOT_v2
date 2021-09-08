@@ -183,7 +183,7 @@ if (config.WELCOME == 'pp' || config.WELCOME == 'Pp' || config.WELCOME == 'PP' |
             var gb = await getMessage(msg.key.remoteJid);
             if (gb !== false) {
             var sewqueenimage = await axios.get(config.WEL_GIF, { responseType: 'arraybuffer' })
-            await conn.sendMessage(msg.key.remoteJid, Buffer.from(sewqueenimage.data), MessageType.video, {mimetype: Mimetype.gif, caption: gb.message +'\n\n                 ᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ꜱᴜᴘᴇʀꜱᴍᴀʀᴛ'});
+            await conn.sendMessage(msg.key.remoteJid, Buffer.from(sewqueenimage.data), MessageType.video, {mimetype: Mimetype.gif, caption: gb.message +'\n\n                 ᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴜᴘᴇʀꜱᴍᴀʀᴛ'});
             }
             return;
         }
