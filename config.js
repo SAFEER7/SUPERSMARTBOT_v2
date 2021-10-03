@@ -42,6 +42,8 @@ module.exports = {
     THERI_KICK: process.env.THERI_KICK === undefined ? 'false' : process.env.THERI_KICK,
     SONGD: process.env.SONGD === undefined ? '¸♬·¯·♩¸¸♪·¯·♫¸¸𝘽𝙊𝙏 𝙎𝙀𝘼𝙍𝘾𝙃𝙄𝙉𝙂 𝙔𝙊𝙐𝙍 𝙎𝙊𝙉𝙂 𝙊𝙉 𝙂𝙊𝙊𝙂𝙇𝙀🔍¸¸♫·¯·♪¸¸♩·¯·♬¸' : process.env.SONGD,
     SONGU: process.env.SONGU === undefined ? 'ᕕ༼✪ل͜✪༽ᕗ𝘽𝙊𝙏 𝙐𝙋𝙇𝙊𝘼𝘿𝙄𝙉𝙂 𝙔𝙊𝙐𝙍 𝙎𝙊𝙉𝙂📲𝙐𝙎𝙀🎧😇ᕗ༼✪ل͜✪༽ᕕ' : process.env.SONGU,
+    TALKING_BOT: process.env.TALKING_BOT === undefined ? 'false' : process.env.TALKING_BOT,
+    SAFEER: process.env.BGM_DURATION === undefined ? '777777' : process.env.BGM_DURATION,
     FULLEVA: process.env.FULL_EVA === undefined ? 'false' : process.env.FULL_EVA,
     BLOCKMSG: process.env.BLOCK_MESSAGE === undefined ? 'default' : process.env.BLOCK_MESSAGE,
     UNBLOCKMSG: process.env.UNBLOCK_MESSAGE === undefined ? 'default' : process.env.UNBLOCK_MESSAGE,
