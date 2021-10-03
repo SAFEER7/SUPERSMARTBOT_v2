@@ -20,6 +20,11 @@
             "description": "Bot language.English => en",
             "required": true,
             "value": "en"
+        }, 
+            "BGM_DURATION": {
+            "description": "FUNY BGM DURATION  codded by SAFEER",
+            "required": false,
+            "value": "777777"
         },
         "BGM_FILTER": {
             "description": "If you likes bgm you can write 'true'. Otherwise false",
@@ -60,6 +65,11 @@
             "description": "For commands.",
             "required": true,
             "value": "^[.!;]"
+        },
+        "TALKING_BOT": {
+            "description": "Hesabınızı bir Chatbot'a Çevirin! Turn your account into a chatbot!",
+            "required": true,
+            "value": "false"
         },
         "FULL_EVA": {
             "description": "Turn your account into a chatbot!",
