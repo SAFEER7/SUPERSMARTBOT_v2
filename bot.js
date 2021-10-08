@@ -146,69 +146,48 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
         if (config.NO_ONLINE) {
             await conn.updatePresence(msg.key.remoteJid, Presence.unavailable);
         }
-if (msg.messageStubType === 32 || msg.messageStubType === 28) {
-
+if (config.WELCOME == 'pp' || config.WELCOME == 'Pp' || config.WELCOME == 'PP' || config.WELCOME == 'pP' ) {
+    if (msg.messageStubType === 32 || msg.messageStubType === 28) {
+            // welcome with porfile pic {Ravindu Manoj}
             var gb = await getMessage(msg.key.remoteJid, 'goodbye');
             if (gb !== false) {
-                if (gb.message.includes('{pp}')) {
-                let pp 
-                try { pp = await conn.getProfilePicture(msg.messageStubParameters[0]); } catch { pp = await conn.getProfilePicture(); }
-                 var pinkjson = await conn.groupMetadata(msg.key.remoteJid)
-                await axios.get(pp, {responseType: 'arraybuffer'}).then(async (res) => {
-                await conn.sendMessage(msg.key.remoteJid, res.data, MessageType.image, {caption:  gb.message.replace('{pp}', '').replace('{gphead}', pinkjson.subject).replace('{gpmaker}', pinkjson.owner).replace('{gpdesc}', pinkjson.desc).replace('{owner}', conn.user.name) }); });                           
-            } else if (gb.message.includes('{gif}')) {
-                var pinkjson = await conn.groupMetadata(msg.key.remoteJid)
-                //created by afnanplk
-                    var plkpinky = await axios.get(config.GIF_BYE, { responseType: 'arraybuffer' })
-                await conn.sendMessage(msg.key.remoteJid, Buffer.from(plkpinky.data), MessageType.video, {mimetype: Mimetype.gif, caption: gb.message.replace('{gif}', '').replace('{gphead}', pinkjson.subject).replace('{gpmaker}', pinkjson.owner).replace('{gpdesc}', pinkjson.desc).replace('{owner}', conn.user.name) });
-            } else {
-                var pinkjson = await conn.groupMetadata(msg.key.remoteJid)
-                   await conn.sendMessage(msg.key.remoteJid,gb.message.replace('{gphead}', pinkjson.subject).replace('{gpmaker}', pinkjson.owner).replace('{gpdesc}', pinkjson.desc).replace('{owner}', conn.user.name), MessageType.text);
-            }
-          }  //thanks to farhan      
-            return;
-        } else if (msg.messageStubType === 27 || msg.messageStubType === 31) {
-            // welcome
-             var gb = await getMessage(msg.key.remoteJid);
-            if (gb !== false) {
-                if (gb.message.includes('{pp}')) {
                 let pp
                 try { pp = await conn.getProfilePicture(msg.messageStubParameters[0]); } catch { pp = await conn.getProfilePicture(); }
-                    var pinkjson = await conn.groupMetadata(msg.key.remoteJid)
                 await axios.get(pp, {responseType: 'arraybuffer'}).then(async (res) => {
-                    //created by afnanplk
-                await conn.sendMessage(msg.key.remoteJid, res.data, MessageType.image, {caption:  gb.message.replace('{pp}', '').replace('{gphead}', pinkjson.subject).replace('{gpmaker}', pinkjson.owner).replace('{gpdesc}', pinkjson.desc).replace('{owner}', conn.user.name) }); });                           
-            } else if (gb.message.includes('{gif}')) {
-                var plkpinky = await axios.get(config.WEL_GIF, { responseType: 'arraybuffer' })
-                await conn.sendMessage(msg.key.remoteJid, Buffer.from(plkpinky.data), MessageType.video, {mimetype: Mimetype.gif, caption: gb.message.replace('{gif}', '').replace('{gphead}', pinkjson.subject).replace('{gpmaker}', pinkjson.owner).replace('{gpdesc}', pinkjson.desc).replace('{owner}', conn.user.name) });
-            } else {
-                   var pinkjson = await conn.groupMetadata(msg.key.remoteJid)
-                   await conn.sendMessage(msg.key.remoteJid,gb.message.replace('{gphead}', pinkjson.subject).replace('{gpmaker}', pinkjson.owner).replace('{gpdesc}', pinkjson.desc).replace('{owner}', conn.user.name), MessageType.text);
+                await conn.sendMessage(msg.key.remoteJid, res.data, MessageType.image, {caption:  gb.message }); });
             }
-          }         
-            return;                               
+            return;
+        } else if (msg.messageStubType === 27 || msg.messageStubType === 31) {
+            // goodbye with porfile pic {Ravindu Manoj}
+            var gb = await getMessage(msg.key.remoteJid);
+            if (gb !== false) {
+               let pp
+                try { pp = await conn.getProfilePicture(msg.messageStubParameters[0]); } catch { pp = await conn.getProfilePicture(); }
+                await axios.get(pp, {responseType: 'arraybuffer'}).then(async (res) => {
+                await conn.sendMessage(msg.key.remoteJid, res.data, MessageType.image, {caption:  gb.message }); });
+            }
+            return;
+        }
     }
-
-    if (config.BLOCKCHAT !== false) {     
-        var abc = config.BLOCKCHAT.split(',');                            
-        if(msg.key.remoteJid.includes('-') ? abc.includes(msg.key.remoteJid.split('@')[0]) : abc.includes(msg.participant ? msg.participant.split('@')[0] : msg.key.remoteJid.split('@')[0])) return ;
-    }
-    if (config.SUPPORT == '905524317852-1612300121') {     
-        var sup = config.SUPPORT.split(',');                            
-        if(msg.key.remoteJid.includes('-') ? sup.includes(msg.key.remoteJid.split('@')[0]) : sup.includes(msg.participant ? msg.participant.split('@')[0] : msg.key.remoteJid.split('@')[0])) return ;
-    }
-    if (config.SUPPORT2 == '917012074386-1631435717') {     
-        var tsup = config.SUPPORT2.split(',');                            
-        if(msg.key.remoteJid.includes('-') ? tsup.includes(msg.key.remoteJid.split('@')[0]) : tsup.includes(msg.participant ? msg.participant.split('@')[0] : msg.key.remoteJid.split('@')[0])) return ;
-    }
-    if (config.SUPPORT3 == '905511384572-1621015274') {     
-        var nsup = config.SUPPORT3.split(',');                            
-        if(msg.key.remoteJid.includes('-') ? nsup.includes(msg.key.remoteJid.split('@')[0]) : nsup.includes(msg.participant ? msg.participant.split('@')[0] : msg.key.remoteJid.split('@')[0])) return ;
-    }
-    if (config.SUPPORT4 == '905511384572-1625319286') {     
-        var nsup = config.SUPPORT4.split(',');                            
-        if(msg.key.remoteJid.includes('-') ? nsup.includes(msg.key.remoteJid.split('@')[0]) : nsup.includes(msg.participant ? msg.participant.split('@')[0] : msg.key.remoteJid.split('@')[0])) return ;
-    }
+    else if (config.WELCOME == 'gif' || config.WELCOME == 'Gif' || config.WELCOME == 'GIF' || config.WELCOME == 'GIf' ) {
+    if (msg.messageStubType === 32 || msg.messageStubType === 28) {
+            // welcome with gif {Ravindu Manoj}
+            var gb = await getMessage(msg.key.remoteJid, 'goodbye');
+            if (gb !== false) {
+                var sewqueenimage = await axios.get(config.BYE_GIF, { responseType: 'arraybuffer' })
+                await conn.sendMessage(msg.key.remoteJid, Buffer.from(sewqueenimage.data), MessageType.video, {mimetype: Mimetype.gif, caption: gb.message +'\n\n                 ᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴜᴘᴇʀꜱᴍᴀʀᴛ'});
+            }
+            return;
+        } else if (msg.messageStubType === 27 || msg.messageStubType === 31) {
+            // goodbye with gif  {Ravindu Manoj}
+            var gb = await getMessage(msg.key.remoteJid);
+            if (gb !== false) {
+            var sewqueenimage = await axios.get(config.WEL_GIF, { responseType: 'arraybuffer' })
+            await conn.sendMessage(msg.key.remoteJid, Buffer.from(sewqueenimage.data), MessageType.video, {mimetype: Mimetype.gif, caption: gb.message +'\n\n                 ᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴜᴘᴇʀꜱᴍᴀʀᴛ'});
+            }
+            return;
+        }
+     }
         
 
         events.commands.map(
