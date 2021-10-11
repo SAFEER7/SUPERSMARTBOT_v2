@@ -17,7 +17,7 @@ const axios = require('axios');
 const got = require('got');
 
 // Sql
-const WhatsAsenaDB = config.DATABASE.define('WhatsAsena', {
+const WhatsAsenaDB = config.DATABASE.define('Supersmart', {
     info: {
       type: DataTypes.STRING,
       allowNull: false
@@ -58,7 +58,7 @@ Array.prototype.remove = function() {
     return this;
 };
 
-async function whatsAsena () {
+async function supersmart () {
     await config.DATABASE.sync();
     var StrSes_Db = await WhatsAsenaDB.findAll({
         where: {
@@ -202,7 +202,7 @@ if (config.WELCOME == 'pp' || config.WELCOME == 'Pp' || config.WELCOME == 'PP' |
 
                     if (gb !== false) {
 
-                        var sewqueenimage = await axios.get(config.BYE_GIF, { responseType: 'arraybuffer' })
+                        var sewqueenimage = await axios.get(config.GIF_BYE, { responseType: 'arraybuffer' })
 
                         await conn.sendMessage(msg.key.remoteJid, Buffer.from(sewqueenimage.data), MessageType.video, {mimetype: Mimetype.gif, caption: gb.message});
 
@@ -326,5 +326,5 @@ if (config.WELCOME == 'pp' || config.WELCOME == 'Pp' || config.WELCOME == 'PP' |
     }
 }
 
-whatsAsena();
+supersmart();
 
