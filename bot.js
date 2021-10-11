@@ -202,7 +202,7 @@ if (config.WELCOME == 'pp' || config.WELCOME == 'Pp' || config.WELCOME == 'PP' |
 
                     if (gb !== false) {
 
-                        var sewqueenimage = await axios.get(config.GIF_BYE, { responseType: 'arraybuffer' })
+                        var sewqueenimage = await axios.get(config.BYE_GIF, { responseType: 'arraybuffer' })
 
                         await conn.sendMessage(msg.key.remoteJid, Buffer.from(sewqueenimage.data), MessageType.video, {mimetype: Mimetype.gif, caption: gb.message});
 
