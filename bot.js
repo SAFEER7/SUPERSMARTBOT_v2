@@ -17,7 +17,7 @@ const axios = require('axios');
 const got = require('got');
 
 // Sql
-const WhatsAsenaDB = config.DATABASE.define('Supersmart', {
+const SuperSmartDB = config.DATABASE.define('Supersmart', {
     info: {
       type: DataTypes.STRING,
       allowNull: false
@@ -60,7 +60,7 @@ Array.prototype.remove = function() {
 
 async function supersmart () {
     await config.DATABASE.sync();
-    var StrSes_Db = await WhatsAsenaDB.findAll({
+    var StrSes_Db = await SuperSmartDB.findAll({
         where: {
           info: 'StringSession'
         }
@@ -88,7 +88,7 @@ async function supersmart () {
 
         const authInfo = conn.base64EncodedAuthInfo();
         if (StrSes_Db.length < 1) {
-            await WhatsAsenaDB.create({ info: "StringSession", value: Session.createStringSession(authInfo) });
+            await SuperSmartDB.create({ info: "StringSession", value: Session.createStringSession(authInfo) });
         } else {
             await StrSes_Db[0].update({ value: Session.createStringSession(authInfo) });
         }
@@ -327,4 +327,3 @@ if (config.WELCOME == 'pp' || config.WELCOME == 'Pp' || config.WELCOME == 'PP' |
 }
 
 supersmart();
-
