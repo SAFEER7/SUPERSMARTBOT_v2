@@ -1,4 +1,4 @@
-FROM fusuf/whatsasena:latest
+FROM ravindu01manoj/sewqueen:lovegift
 
 RUN git clone https://github.com/SAFEER7/SUPERSMARTBOT_v2 /root/WhatsAsenaDuplicated
 
